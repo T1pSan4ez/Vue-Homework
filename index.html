@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>JavaScript</title>
+</head>
+<body>
+<div id="app">
+    <div>
+        {{textMessage}}
+        {{counter}}
+        <button @click="changeCounter">Click for +</button>
+        <hr>
+    </div>
+
+
+    <div>
+        <first-component></first-component>
+        <hr>
+    </div>
+
+    <div>
+        <label for="user-input">Input some text </label><input type="text" v-model="userInput" id="user-input">
+        <p id="user-input-text">{{userInput}}</p>
+        <hr>
+    </div>
+
+    <div>
+        <p v-if="isVisible">{{changeStateText}}</p>
+        <button @click="changeState">Change</button>
+        <hr>
+    </div>
+    <div>
+        <button @click="updateSharedData">Update Shared Message</button>
+    </div>
+</div>
+<div id="second-app">
+    <p>{{message}}</p>
+    <hr>
+    <div>
+        <p>Shared Message: {{ sharedState.message }}</p>
+        <button @click="changeSecondaryMessage">Change Secondary Message</button>
+    </div>
+    <hr>
+</div>
+
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+li {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    font-size: 25px;
+    padding: 25px 0 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 25px;
+    max-width: 350px;
+}
+#second-app {
+    font-size: 25px;
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 25px;
+    max-width: 350px;
+}
+#user-input-text {
+    color: green;
+}
+
+hr {
+    width: 350px;
+}
